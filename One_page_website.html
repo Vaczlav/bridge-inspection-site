@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridges Inspection</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#video">Videos</a>
+</nav>
+
+<section id="home">
+    <h1>Welcome to TSI Bridges Inspection</h1>
+    <p>TSI specializes in the inspection of bridges and culverts in the province of Ontario.</p>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="row">
+        <div class="column">
+            <img src="/images/bridge_inspection_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Bridge Inspection 1">
+        </div>
+        <div class="column">
+            <img src="/images/bridge_inspection_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Bridge Inspection 2">
+        </div>
+        <div class="column">
+            <img src="/images/bridge_inspection_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Bridge Inspection 3">
+        </div>
+    </div>
+
+    <!-- Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="/images/bridge_inspection_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="/images/bridge_inspection_2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="/images/bridge_inspection_3.jpg" style="width:100%">
+            </div>
+
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="column">
+                <img class="demo" src="/images/bridge_inspection_1.jpg" onclick="currentSlide(1)" alt="Bridge Inspection 1">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/images/bridge_inspection_2.jpg" onclick="currentSlide(2)" alt="Bridge Inspection 2">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="/images/bridge_inspection_3.jpg" onclick="currentSlide(3)" alt="Bridge Inspection 3">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required><p>
+        <input type="email" placeholder="Your Email" required><p>
+        <textarea placeholder="Your Message" required></textarea><p>
+        <input type="submit" value="Send">
+    </form>
+</section>
+
+<!-- Video -->
+
+<section id="video">
+    <h2>Inspection Videos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5FYI3g24nUE?si=ewHjql1xCsek9b2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
+<footer>
+    <p>TSI - Bridges Inspection</p>
+</footer>
+
+<!--Script patch-->
+<script src="/js/one_page_website.js"></script>
+
+</body>
+</html>
